@@ -26,7 +26,7 @@ const ServiceSection = () => {
                 <div className="services-section-cards" >
                     {
                     service.map(
-                        service => <ServiceCard name={service.name} greenIcon={service.greenIcon}  image={service.image} info={service.info} key={service.id} pageInfo={service.info} pageImage={service.greenIcon} pageImages={service.images}    />
+                        service => <ServiceCard name={service.name} greenIcon={service.greenIcon}  image={service.image} info={service.info} key={service.id} pageInfo={service.info} pageImage={service.greenIcon} pageImages={service.images} pageDescription={service.briefInfo}    />
                     )
                     }
                 </div>

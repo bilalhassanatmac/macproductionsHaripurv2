@@ -16,7 +16,7 @@ const ServicePage = () => {
         <div className="left-nav" >
             <div className="left-nav-link" >
                 {
-                    servicesList.map(({name:name, images:pageImages, info:pageInfo, image:icon, briefInfo:description}) => <Link to="/service" state={{name, pageImages, pageInfo, icon }}><span>
+                    servicesList.map(({name:name, images:pageImages, info:pageInfo, image:icon, description:briefInfo}) => <Link to="/service" state={{name, pageImages, pageInfo, icon, briefInfo }}><span>
                         <img src={icon} />
                         <p>{name}</p>
                         </span></Link>)
@@ -32,6 +32,7 @@ const ServicePage = () => {
             </div>
             <div className="info-main" >
                 <h2>{data.name}</h2>
+                <p>{data.pageDescription}</p>
             </div>
         </div>
         

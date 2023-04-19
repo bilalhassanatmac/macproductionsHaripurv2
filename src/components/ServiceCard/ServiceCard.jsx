@@ -2,7 +2,7 @@ import "./serviceCard.scss";
 import React from 'react';
 import { Link } from "react-router-dom";
 
-const ServiceCard = ({greenIcon ,image, name, info, pageInfo, pageImages}) => {
+const ServiceCard = ({greenIcon ,image, name, info, pageInfo, pageImages, pageDescription}) => {
   return (
     <div class="card-container">
       <div class="card">
@@ -11,13 +11,13 @@ const ServiceCard = ({greenIcon ,image, name, info, pageInfo, pageImages}) => {
             <span class="stars"></span>
             <img src={image}/>
             <p class="card-text">{info}</p>
-            <Link to="/service" state={{name, pageImages ,pageInfo}} className="button button-small button-white">View</Link>
+            <Link to="/service" state={{name, pageImages ,pageInfo, pageDescription}} className="button button-small button-white">View</Link>
           </div>
         </div>
         <div class="face face2">
           <img src={greenIcon} alt="" />
           <h4>{name}</h4>
-          <Link to="/service" state={{name, pageImages ,pageInfo}} className="button button-small button-green">View</Link>
+          <Link to="/service" state={{name, pageImages ,pageInfo, pageDescription}} className="button button-small button-green">View</Link>
         </div>
       </div>
     </div>
