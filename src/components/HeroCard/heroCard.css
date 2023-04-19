@@ -1,0 +1,62 @@
+.hero-card {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: var(--white-color-shade-v1);
+    height: 400px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.4rem 1.4rem;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+    color: var(--dark-color-shade-v1);
+    z-index: 2;
+}
+.hero-card:hover {
+    background-color: rgb(255, 250, 250);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.hero-card .hero-icon {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    position: absolute;
+    padding: 2.6rem;
+    background-color: var(--blue-color-shade-v1);
+    top: -50px;
+}
+
+.hero-card img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-card {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-card .hero-icon {
+        transform: translateY(-50px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-card h3, .hero-card p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .hero-card .hero-icon {
+        transform: translateY(-40px);
+    }
+}

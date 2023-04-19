@@ -1,0 +1,53 @@
+.service-section-main {
+    color: var(--blue-color-shade-v1);
+    background-color: var(--white-color-shade-v1);
+    position: relative;
+    z-index: -5;
+    overflow: hidden;
+    background-image: url("../../images/illustration/waves.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-section-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+.service-section-sub .left-section {
+    flex: 2;
+}
+.service-section-sub .right-section {
+    flex: 2;
+    line-height: 1.4;
+    text-align: justify;
+}
+.service-section-sub .right-section .subtext {
+    color: var(--blue-color-shade-v3);
+    font-weight: bold;
+    font-size: var(--text);
+}
+
+.service-section-sub .right-section .info {
+    line-height: 1.6;
+    margin-top: 18px;
+}
+
+.service-section-sub .right-section .info ul {
+    margin-top: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+    .service-section-main {
+        background-color: #263238;
+        color: var(--white-color-shade-v2);
+        text-align: center;
+
+    }
+    .service-section-sub .left-section {
+        display: none;
+    }
+}

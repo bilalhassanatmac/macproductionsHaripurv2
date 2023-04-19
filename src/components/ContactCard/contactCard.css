@@ -1,0 +1,120 @@
+.contact-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2.8rem 6.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact-card-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+.contact-card-left h2 {
+    color: var(--dark-color-shade-v2);
+}
+.contact-card img {
+    width: 30%;
+    height: 30%;
+}
+/* .contact-card-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.contact-card-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contact-card .input-field {
+    border: 2px solid #e9ebef;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.contact-card input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #eff2f6;
+    color: #454545;
+    height: 67px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    font-size: var(--text);
+    font-family: 'Nunito', sans-serif;
+}
+.contact-card input::placeholder {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+.contact-card-inputs {
+    width: 100%;
+}
+.input-field-big {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #eff2f6;
+    color: #454545;
+    text-align: start;
+    padding: 18px 15px;
+    border-radius: 4px;
+    resize: none;
+    font-size: var(--text);
+    font-family: 'Nunito', sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-card img {
+        display: none;
+    }
+    .contact-card-left {
+        align-items: center;
+    }
+    .contact-card-inputs {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-card .input-field {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-card input::placeholder {
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+    }
+    textarea {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .contact-card {
+        padding: 2.8rem 2.4rem;
+    }
+}

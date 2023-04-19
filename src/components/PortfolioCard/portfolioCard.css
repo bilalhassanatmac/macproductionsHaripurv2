@@ -1,0 +1,12 @@
+.portfolio-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(180deg,#292929 0,#0A0A0A 100%);
+    color: #fff;
+    cursor: pointer;
+}

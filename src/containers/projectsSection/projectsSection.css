@@ -1,0 +1,41 @@
+.projects-section {
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.projects-section-wrapper {
+    background-color: var(--white-color-shade-v2);
+}
+
+.project-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-stat {
+    text-align: center;
+}
+.project-stats h1 {
+    color: var(--blue-color-shade-v3);
+}
+.project-stats p {
+    color: var(--dark-color-shade-v2);
+    font-size: 3.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .project-stats {
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        gap: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projects-section .contact-card {
+        transform: translateY(-50px);
+    }
+}
