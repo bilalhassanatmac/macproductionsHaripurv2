@@ -11,12 +11,13 @@ const ServicePage = () => {
     const data = location.state;
     console.log(data);
     const servicesList = services;
+    console.log(servicesList);
   return (
     <div className="service-page">
         <div className="left-nav" >
             <div className="left-nav-link" >
                 {
-                    servicesList.map(({name:name, images:pageImages, info:pageInfo, image:icon, description:briefInfo}) => <Link to="/service" state={{name, pageImages, pageInfo, icon, briefInfo }}><span>
+                    servicesList.map(({name:name, images:pageImages, info:pageInfo, image:icon, briefInfo: pageDescription}) => <Link to="/service" state={{name, pageImages, pageInfo, icon, pageDescription }}><span>
                         <img src={icon} />
                         <p>{name}</p>
                         </span></Link>)
@@ -25,7 +26,7 @@ const ServicePage = () => {
         </div>
         <div className={`service-page-info`}>
             <div className="service-images" >
-                <img src={data.pageImages[0]} alt="" />
+                <img src={data.pageImages[2]} alt="" />
                 {/* <img src={data.pageImages[1]} alt="" />
                 <img src={data.pageImages[3]} alt="" />
                 <img src={data.pageImages[2]} alt="" /> */}
